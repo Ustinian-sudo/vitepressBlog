@@ -18,7 +18,7 @@ export default {
 			},
 			{ text: '👁️‍🗨️关于我', link: '/mine/' }
 		],
-		socialLinks: [{ icon: 'github', link: 'https://github.com/aehyok' }], // 社交链接
+		socialLinks: [{ icon: 'github', link: 'https://github.com/Ustinian-sudo' }], // 社交链接
 
 		// 底部
 		footer: {

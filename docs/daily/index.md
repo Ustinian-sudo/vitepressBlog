@@ -26,7 +26,13 @@
   - [Emoji 大全|Emoji 表情符号词典](https://www.emojiall.com/zh-hans)
 
 - 常用小工具
+
+  - ⭐[在线 ps](https://www.uupoop.com/ps/)
+  - ⭐[图片无损压缩](https://tinypng.com/)
   - [BootCDN|极兔云](https://www.bootcdn.cn/#about)
+
+- 提高效率
+  - ⭐[css 动画框架](https://cssanimation.io/)
 
 ## 面试篇
 
