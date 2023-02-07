@@ -44,3 +44,21 @@
 
   - [前端总结大全](https://blog.csdn.net/weixin_43638968/article/details/107518108)
   - [2021 高频前端面试题汇总之前端性能优化篇](https://juejin.cn/post/6941278592215515143)
+
+## 前端篇
+
+- 提高效率
+
+  - 渐变色[WebGradients](https://webgradients.com/)
+
+- 常用组件库
+
+  - Vue
+
+    - [Element UI](https://element.eleme.cn/#/zh-CN/component/installation)
+    - [Element Plus](https://element-plus.org/zh-CN/component/button.html)
+    - [Ant Design Vue](https://www.antdv.com/components/overview-cn)
+
+## 安装篇
+
+- [Git 国内镜像](https://registry.npmmirror.com/binary.html?path=git-for-windows/)

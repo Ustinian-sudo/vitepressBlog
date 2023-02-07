@@ -7,7 +7,7 @@ export default {
 		nav: [
 			{ text: '🏠首页', link: '/' },
 			{ text: '📖搬砖日记', link: '/daily/' },
-			{ text: '前端总结', link: '/javascript/' },
+			{ text: '📓我的笔记', link: '/note/' },
 			{ text: '🔧更新日志', link: '/log/' },
 			{
 				text: ' 🗞️我的博客',
@@ -33,7 +33,9 @@ export default {
 					text: '2022年每日笔记',
 					items: [
 						{ text: 'home', link: '/daily/' },
-						{ text: '2022-10', link: '/daily/2022-10' }
+						{ text: '2022-10', link: '/daily/2022-10' },
+						{ text: '2022-11', link: '/daily/2022-11' },
+						{ text: '2022-12', link: '/daily/2022-12' }
 					]
 				}
 			]
