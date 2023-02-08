@@ -3,10 +3,16 @@
 	"version": "1.0.0",
 	"description": "my blod",
 	"main": "index.js",
+	"config": {
+		"commitizen": {
+			"path": "node_modules/cz-customizable"
+		}
+	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "vitepress dev docs",
-		"build": "vitepress build docs"
+		"build": "vitepress build docs",
+		"git": "git add . && git cz"
 	},
 	"author": "ustinian",
 	"license": "ISC",
