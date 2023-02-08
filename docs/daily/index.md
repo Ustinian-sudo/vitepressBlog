@@ -47,9 +47,12 @@
 
 ## 前端篇
 
-- 提高效率
+- CSS 小技巧
 
   - 渐变色[WebGradients](https://webgradients.com/)
+  - 渐变色配置[Colorgradient](https://colorgradient.dev/)
+  - Box Shadows 调节[Box Shadows](https://shadows.brumm.af/?ref=undesign)
+  - 水滴生成[Border Radius](https://9elements.github.io/fancy-border-radius/#0.51.60.33--.)
 
 - 常用组件库
 
@@ -62,3 +65,7 @@
 ## 安装篇
 
 - [Git 国内镜像](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
+
+## 网站篇
+
+- 一个整理了众多GitHub入门级项目的宝藏网站[HelloGitHub](https://hellogithub.com/)

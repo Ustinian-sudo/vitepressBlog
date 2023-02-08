@@ -6,6 +6,8 @@ import './styles/default.scss'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
+// 导入组件
+
 export default {
 	...DefaultTheme,
 
