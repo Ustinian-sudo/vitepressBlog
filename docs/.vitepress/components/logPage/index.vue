@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts" setup>
-import Badge from '../public/Badge.vue';
+import Badge from '../tools/Badge.vue';
 </script>
 
 <style lang="scss" scoped>

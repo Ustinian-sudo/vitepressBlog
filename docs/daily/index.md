@@ -1,3 +1,11 @@
+<script setup>
+import Bubble from '../.vitepress/components/animation/Bubble.vue'
+</script>
+
+<Bubble/>
+
+
+
 ::: tip
 
 - 💖 Ustinian 倾情推荐
@@ -9,7 +17,7 @@
 
 - 学习网站
 
-  - 💖 [labuladong](https://appktavsiei5995.pc.xiaoe-tech.com/detail/p_629871eee4b01a48520729f7/6)
+  - 💖 [labuladong](https://appktavsiei5995.pc.xiaoe-tech.com/detail/p_629871eee4b01a48520729f7/6) -- 东哥yyds,网站付费,可以关注他的公众号(~~白嫖.jpg~~)
   - [algorithm-pattern](https://greyireland.gitbook.io/algorithm-pattern/)
 
 - 刷题网站
@@ -32,7 +40,8 @@
   - [BootCDN|极兔云](https://www.bootcdn.cn/#about)
 
 - 提高效率
-  - ⭐[css 动画框架](https://cssanimation.io/)
+  - [在线正则测试工具regex101](https://regex101.com/)
+  
 
 ## 面试篇
 
@@ -49,7 +58,8 @@
 
 - CSS 小技巧
 
-  - 渐变色[WebGradients](https://webgradients.com/)
+  - ⭐[css 动画框架](https://cssanimation.io/)
+  - ⭐渐变色[WebGradients](https://webgradients.com/)
   - 渐变色配置[Colorgradient](https://colorgradient.dev/)
   - Box Shadows 调节[Box Shadows](https://shadows.brumm.af/?ref=undesign)
   - 水滴生成[Border Radius](https://9elements.github.io/fancy-border-radius/#0.51.60.33--.)

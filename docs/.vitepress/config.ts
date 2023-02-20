@@ -4,21 +4,15 @@ export default {
   head: [["link", { rel: "icon", type: "image/svg+xml", href: "/avatar.png" }]],
   themeConfig: {
     logo: "/avatar.png",
+    algolia: {
+      apiKey: 'your_api_key',
+      indexName: 'index_name'
+    },
     nav: [
       { text: "🏠首页", link: "/" },
       { text: "📖搬砖日记", link: "/daily/" },
       { text: "📓我的笔记", link: "/note/" },
       { text: "🔧更新日志", link: "/log/" },
-      {
-        text: " 🗞️我的博客",
-        items: [
-          {
-            text: "CSDN",
-            link: "https://blog.csdn.net/Th_rob?spm=1010.2135.3001.5343",
-          },
-          { text: "掘金", link: "https://juejin.cn/user/3189018107583960" },
-        ],
-      },
       { text: "👁️‍🗨️关于我", link: "/mine/" },
     ],
     socialLinks: [{ icon: "github", link: "https://github.com/Ustinian-sudo" }], // 社交链接

@@ -8,11 +8,11 @@
 }
 
 :root {
-  --vp-c-brand: #b575e3;
-  --vp-c-brand-light: #c880f9;
+  --vp-c-brand: #41d1ff;
+  --vp-c-brand-light: #41d1ff;
   --vp-c-brand-lighter: #9499ff;
   --vp-c-brand-lightest: #bcc0ff;
-  --vp-c-brand-dark: #c880f9;
+  --vp-c-brand-dark: #41d1ff;
   --vp-c-brand-darker: #945fb9;
   --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
   --vp-nav-height-mobile: 56px;
@@ -48,8 +48,8 @@
       #41d1ff);
 
   --vp-home-hero-image-background-image: linear-gradient(-45deg,
-      #bd34fe 50%,
-      #4c09b9 50%);
+      #41d1ff 50%,
+      #41d1ff 50%);
   --vp-home-hero-image-filter: blur(40px);
 }
 
@@ -57,7 +57,7 @@
 
 @media (min-width: 640px) {
   :root {
-    --vp-home-hero-image-filter: blur(56px);
+    // --vp-home-hero-image-filter: blur(56px);
   }
 }
 

@@ -1,32 +1,94 @@
-
 // #app {
 //   .VPNavBar{
 //     border-bottom: 1px solid var(--vp-c-divider-light);
 //   }
 // } 
-#app{
-  .VPNavBarTitle{
-    .title{
-      color: transparent;
-      background: var(--vp-home-hero-name-background);
-      -webkit-background-clip: text;
-      .logo{
-        height: 40px;
+body {
+  background: url('/bg.jpg') no-repeat;
+  // background-size: 100%;
+  background-attachment: fixed;
+}
+
+
+// 头部
+#app {
+  .VPNav {
+    backdrop-filter: unset;
+
+    .VPNavBarTitle {
+
+      // background: rgba(255, 255, 255, 0.7);
+      // 有侧边栏时
+
+      .title {
+        color: transparent;
+        background: var(--vp-home-hero-name-background);
+        -webkit-background-clip: text;
+
+        .logo {
+          height: 40px;
+        }
+      }
+    }
+
+    // 搜索框
+    .VPNavBarSearch {
+      #docsearch {
+        .DocSearch {
+          // border: 1px solid #777676;
+        }
       }
     }
   }
 }
 
-#app  {
-  .VPHomeHero{
+#app {
+  .VPHomeHero {
     margin-top: 20px;
     margin-bottom: 35px;
+
     .main {
       margin-top: -40px;
-      .tagline{
+
+      .tagline {
         font-size: 23px;
       }
     }
+  }
+}
+
+// 首页卡片
+#app {
+  .VPFeature {
+    background: rgba(255, 255, 255, 0.7);
+  }
+}
+
+// markdown文档
+#app {
+  .VPContent {
+    .VPDoc {
+      .container {
+        background: rgba(255, 255, 255, 0.7);
+        // border: 1px solid red;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+// 侧边栏
+#app {
+  .VPSidebar {
+    background: rgba(255, 255, 255, 0.7);
+  }
+}
+
+// 底部
+#app {
+  .VPFooter {
+    background: rgba(255, 255, 255, 0.7);
   }
 }
 
@@ -49,16 +111,32 @@ p img {
 
 @media (max-width: 960px) {
   #app .image {
-      margin-top: -75px;
+    margin-top: -75px;
   }
 
-  #app .VPHomeHero {
-      margin-bottom: 5px;
 
-      .main {
-          margin-top: 50px;
-      }
+
+  #app .VPHomeHero {
+    margin-bottom: 5px;
+
+    .main {
+      margin-top: 50px;
+    }
   }
 }
 
-@media (min-width: 960px) {}
+@media (min-width: 960px) {
+  #app {
+
+    // 头部标题
+    .VPNavBarTitle.has-sidebar {
+      background-color: unset;
+      margin-right: 24px;
+    }
+
+    // 头部导航
+    .content {
+      backdrop-filter: unset;
+    }
+  }
+}
