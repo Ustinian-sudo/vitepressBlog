@@ -2,7 +2,7 @@
 //   .VPNavBar{
 //     border-bottom: 1px solid var(--vp-c-divider-light);
 //   }
-// } 
+// }
 body {
   background: url('/bg.jpg') no-repeat;
   // background-size: 100%;
@@ -131,12 +131,23 @@ p img {
     // 头部标题
     .VPNavBarTitle.has-sidebar {
       background-color: unset;
-      margin-right: 24px;
+      margin-right: 1.5rem;
     }
 
     // 头部导航
     .content {
       backdrop-filter: unset;
+    }
+  }
+}
+
+@media(max-width:1310px) {
+  #app {
+
+    // 头部标题
+    .VPNavBarTitle.has-sidebar {
+      background-color: unset;
+      margin-right: 2rem;
     }
   }
 }

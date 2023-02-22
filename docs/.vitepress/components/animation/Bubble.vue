@@ -1,6 +1,4 @@
-<script lang="ts" setup>
-</script>
-
+<script lang="ts" setup></script>
 
 <template>
     <div class="kuang">
@@ -21,7 +19,6 @@
         <div class="bubble"></div>
     </div>
 </template>
-
 
 <style lang="scss">
 .kuang {
@@ -54,12 +51,10 @@
         opacity: 0.5;
     }
 
-
     100% {
         transform: translateX(0px);
         bottom: 100%;
         opacity: 0;
-
     }
 }
 
@@ -77,7 +72,6 @@
     height: 20px;
     animation-duration: 6s;
     animation-delay: 1.5s;
-
 }
 
 .bubble:nth-child(3) {
@@ -93,7 +87,6 @@
     height: 30px;
     animation-duration: 5.5s;
     animation-delay: 1.5s;
-
 }
 
 .bubble:nth-child(5) {
@@ -101,9 +94,6 @@
     width: 50px;
     height: 50px;
     animation-duration: 12s;
-
-
-
 }
 
 .bubble:nth-child(6) {
@@ -112,7 +102,6 @@
     height: 20px;
     animation-duration: 6s;
     animation-delay: 1s;
-
 }
 
 .bubble:nth-child(7) {
@@ -121,7 +110,6 @@
     height: 40px;
     animation-duration: 8s;
     animation-delay: 1s;
-
 }
 
 .bubble:nth-child(8) {
@@ -129,7 +117,6 @@
     width: 60px;
     height: 60px;
     animation-duration: 15s;
-
 }
 
 .bubble:nth-child(9) {
@@ -138,7 +125,6 @@
     height: 55px;
     animation-duration: 9s;
     animation-delay: 0.5s;
-
 }
 
 .bubble:nth-child(10) {
@@ -183,4 +169,5 @@
     width: 35px;
     height: 35px;
     animation-duration: 8s;
-}</style>
+}
+</style>
