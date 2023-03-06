@@ -71,7 +71,7 @@ import Bubble from '../.vitepress/components/animation/Bubble.vue'
     - [Element UI](https://element.eleme.cn/#/zh-CN/component/installation)
     - [Element Plus](https://element-plus.org/zh-CN/component/button.html)
     - [Ant Design Vue](https://www.antdv.com/components/overview-cn)
-
+    - [Quasar](http://www.quasarchs.com/)
 ## 安装篇
 
 - [Git 国内镜像](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
