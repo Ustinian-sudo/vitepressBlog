@@ -16,7 +16,7 @@ export default {
             { text: '👁️‍🗨️关于我', link: '/mine/' },
         ],
         socialLinks: [{ icon: 'github', link: 'https://github.com/Ustinian-sudo' }], // 社交链接
-
+        
         // 底部
         footer: {
             message: 'Released under the MIT License.',
@@ -43,6 +43,7 @@ export default {
                     items: [
                         { text: '2023-01', link: '/daily/2023-01' },
                         { text: '2023-02', link: '/daily/2023-02' },
+                        { text: '2023-03', link: '/daily/2023-03' },
                     ],
                 },
             ],

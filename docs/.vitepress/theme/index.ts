@@ -6,10 +6,7 @@ import './styles/default.scss';
 import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
 
-//
-function test() {
-    console.log('测试aaa');
-}
+// 自定义组件
 
 export default {
     ...DefaultTheme,

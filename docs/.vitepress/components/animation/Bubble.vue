@@ -1,4 +1,4 @@
-<script lang="ts" setup></script>
+<script lang="ts" name="Bubble" setup></script>
 
 <template>
     <div class="kuang">
