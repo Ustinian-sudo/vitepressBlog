@@ -29,7 +29,7 @@ export default {
                 '/so': {
                     target: 'http://139.159.245.209:5000', // 代理接口
                     changeOrigin: true,
-                    rewrite: path => path.replace(/^\/so/, ''),
+                    rewrite: (path: string) => path.replace(/^\/so/, ''),
                 },
             },
         },

@@ -1,15 +1,14 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
-        "useDefineForClassFields": true,
-        "module": "ESNext",
+        "baseUrl": ".",
+        "outDir": "dist",
+        "allowJs": true,
+        "module": "esnext",
         "moduleResolution": "node",
         "strict": true,
-        "sourceMap": true,
-        "resolveJsonModule": true,
-        "allowJs": true,
-        "isolatedModules": true,
+        "jsx": "preserve",
         "esModuleInterop": true,
+        "noUnusedLocals": true,
         "lib": [
             "ESNext",
             "DOM"
@@ -21,8 +20,14 @@
         ]
     },
     "include": [
-        "**/*.ts",
-        "**/*.d.ts",
-        "**/*.vue"
+        "docs/.vitepress/**/*.ts",
+        "docs/.vitepress/**/*.vue"
+        // "**/*.ts",
+        // "**/*.d.ts",
+        // "**/*.vue"
+        // "docs",
+    ],
+    "exclude": [
+        "node_modules"
     ]
 }

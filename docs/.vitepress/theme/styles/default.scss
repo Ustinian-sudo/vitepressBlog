@@ -124,9 +124,17 @@ p img {
 @media (min-width: 960px) {
 	#app {
 		// 头部标题
-		.VPNavBarTitle.has-sidebar {
-			background-color: unset;
-			margin-right: 1.5rem;
+		// .VPNavBarTitle.has-sidebar {
+		// 	background-color: unset;
+		// 	margin-right: 1.5rem;
+		// }
+		
+		// .VPNavBar.has-sidebar .content-body[data-v-cf6e7c5e], .VPNavBar.fill .content-body[data-v-cf6e7c5e] {
+		// 	// background-color: ;
+		// }
+
+		.VPNavBar.has-sidebar .curtain[data-v-cf6e7c5e]::before{
+			content: none;
 		}
 
 		// 头部导航
