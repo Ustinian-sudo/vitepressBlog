@@ -1,5 +1,5 @@
 <script setup>
-import Note from '../.vitepress/components/note/index.vue'
+import Note from '../.vitepress/views/note/index.vue'
 </script>
 
 ## Catalog

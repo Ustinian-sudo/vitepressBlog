@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import Badge from '../../components/tools/Badge.vue';
+</script>
+
 <template>
     <div class="logPage">
         <el-timeline>
@@ -14,10 +18,6 @@
         </el-timeline>
     </div>
 </template>
-
-<script lang="ts" setup>
-import Badge from '../tools/Badge.vue';
-</script>
 
 <style lang="scss" scoped>
 .version {

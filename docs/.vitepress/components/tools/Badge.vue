@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { type } from 'os';
 import { onMounted, ref } from 'vue';
 const props = defineProps({
     type: String
