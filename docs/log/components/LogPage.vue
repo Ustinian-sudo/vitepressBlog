@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Badge from '../../components/tools/Badge.vue';
+import Badge from '../../.vitepress/components/tools/Badge.vue';
 </script>
 
 <template>

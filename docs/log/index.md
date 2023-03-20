@@ -1,5 +1,5 @@
 <script setup>
-import LogPage from '../.vitepress/views/log/index.vue'
+import LogPage from './components/LogPage.vue'
 </script>
 
 <LogPage />

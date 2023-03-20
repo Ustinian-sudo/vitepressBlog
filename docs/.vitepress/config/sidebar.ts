@@ -6,11 +6,13 @@
 export const sidebar = {
     '/daily/': [
         {
-            text: '首页',
+            text: '导航',
             items: [{ text: 'Home', link: '/daily/' }],
         },
         {
             text: '2022年',
+            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '2022-10', link: '/daily/2022-10' },
                 { text: '2022-11', link: '/daily/2022-11' },
@@ -19,6 +21,8 @@ export const sidebar = {
         },
         {
             text: '2023年',
+            collapsible: true,
+            collapsed: false,
             items: [
                 { text: '2023-01', link: '/daily/2023-01' },
                 { text: '2023-02', link: '/daily/2023-02' },

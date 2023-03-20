@@ -1,8 +1,8 @@
 <script setup>
-import Note from '../.vitepress/views/note/index.vue'
+import NotePage from './components/NotePage.vue'
 </script>
 
 ## Catalog
 
-<Note />
+<NotePage />
 
