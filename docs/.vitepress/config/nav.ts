@@ -6,7 +6,13 @@
 export const nav = [
     { text: '🏠首页', link: '/' },
     { text: '📖搬砖日记', link: '/daily/' },
-    { text: '📓我的笔记', link: '/note/' },
+    {
+        text: '📓索引',
+        items: [
+            { text: '归档', link: '/archives/blog/' },
+            { text: '分类', link: '/archives/tag/' },
+        ],
+    },
     { text: '🔧更新日志', link: '/log/' },
     { text: '👁️‍🗨️关于我', link: '/mine/' },
 ];

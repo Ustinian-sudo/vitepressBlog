@@ -29,8 +29,5 @@ features:
     title: 搬砖与博客
     details: 记录自己的日常搬砖的小项目，通过博客的形式来分享出来，与大家交流讨论
 ---
-<Bubble/>
 
-<script setup>
-import Bubble from './.vitepress/components/animation/Bubble.vue'
-</script>
+<Bubble/>

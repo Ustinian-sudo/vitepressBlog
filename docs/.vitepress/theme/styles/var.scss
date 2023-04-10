@@ -16,10 +16,30 @@
     --vp-c-brand-dark: #41d1ff;
     --vp-c-brand-darker: #945fb9;
     --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
+
     --vp-c-bg-alt: '#41d1ff';
     --vp-nav-height-mobile: 56px;
     --vp-nav-height-desktop: 65px;
     --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+}
+
+/**
+ * Blockquote
+ * -------------------------------------------------------------------------- */
+
+:root {
+    --vp-c-doc-blockquote-divider: #41d1ff;
+    --vp-c-doc-blockquote-bg: rgba(238, 248, 252, 0.29);
+    // --vp-c-doc-blockquote-font: #6e09f1;
+}
+
+/**
+ * Fonts
+ * -------------------------------------------------------------------------- */
+
+:root {
+    --date-color: var(--vp-c-text-2);
+    --date-font-family: Georgia, sans-serif;
 }
 
 /**

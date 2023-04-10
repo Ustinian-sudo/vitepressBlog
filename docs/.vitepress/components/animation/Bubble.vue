@@ -34,7 +34,7 @@
     position: absolute;
     border-radius: 50%;
     border: 2px solid #fff;
-    box-shadow: inset 0 0 8px #fff;
+    box-shadow: inset 0 0 8px #383838;
     animation: flutter 10s infinite;
     opacity: 0;
 }

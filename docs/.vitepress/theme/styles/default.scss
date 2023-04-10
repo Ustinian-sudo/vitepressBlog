@@ -3,16 +3,25 @@
 //     border-bottom: 1px solid var(--vp-c-divider-light);
 //   }
 // }
+.Layout {
+    // background-color: rgba(135, 206, 250, 0.5);
+}
+.dark .Layout {
+    // background-color: #121212;
+    background-color: rgba(18, 18, 18, 0.8);
+}
+
 body {
-    background: url('/bg.jpg') no-repeat;
-    // background-size: 100%;
+    background: url('/bg6.jpg') no-repeat;
+    background-size: 100%;
+    // background-color: #D0D0D0;
     background-attachment: fixed;
 }
 
-// 头部
 #app {
+    // 头部导航
     .VPNav {
-        backdrop-filter: unset;
+        // backdrop-filter: unset;
         background: rgba(255, 255, 255, 0.7);
 
         .VPNavBarTitle {
@@ -23,7 +32,7 @@ body {
                 color: transparent;
                 background: var(--vp-home-hero-name-background);
                 -webkit-background-clip: text;
-                border: none;
+                // border: none;
                 .logo {
                     height: 40px;
                 }
@@ -37,6 +46,17 @@ body {
                     // border: 1px solid #777676;
                 }
             }
+        }
+    }
+    .VPSidebar {
+        border-right: 1px solid var(--vp-c-divider);
+        // background: rgba(255, 255, 255, 0.4);
+    }
+    .VPContent {
+        // background: rgba(244, 244, 244, 0.5);
+        // background-color: antiquewhite;
+        .VPDoc {
+            // background-color: aliceblue;
         }
     }
 }
@@ -59,19 +79,31 @@ body {
 // 首页卡片
 #app {
     .VPFeature {
-        background: rgba(255, 255, 255, 0.7);
+        // background: rgba(255, 255, 255, 0.7);
     }
 }
 
 // markdown文档
 #app {
     .VPContent {
+        // color-scheme: light;
+        background-color: rgba(201, 201, 201, 0.3);
         .VPDoc {
             .container {
-                background: rgba(255, 255, 255, 0.7);
+                // background: rgba(255, 255, 255, 0.7);
                 // border: 1px solid red;
                 margin-bottom: 20px;
                 border-radius: 10px;
+            }
+        }
+        .vp-doc {
+            blockquote {
+                padding: 10px 16px;
+                border-left: 3px solid var(--vp-c-doc-blockquote-divider);
+                background-color: var(--vp-c-doc-blockquote-bg);
+                // & > p {
+                //     color: var(--vp-c-doc-blockquote-font);
+                // }
             }
         }
     }
@@ -80,14 +112,14 @@ body {
 // 侧边栏
 #app {
     .VPSidebar {
-        background: rgba(255, 255, 255, 0.4);
+        // background: rgba(255, 255, 255, 0.4);
     }
 }
 
 // 底部
 #app {
     .VPFooter {
-        background: rgba(255, 255, 255, 0.7);
+        // background: rgba(255, 255, 255, 0.7);
     }
 }
 
@@ -133,14 +165,14 @@ p img {
         // 	// background-color: ;
         // }
 
-        // .VPNavBar.has-sidebar .curtain[data-v-cf6e7c5e]::before{
-        // 	content: none;
-        // }
+        .VPNavBar.has-sidebar {
+            border-bottom-color: var(--vp-c-gutter);
+        }
 
         // 头部导航
         .content {
-            background-color: unset;
-            backdrop-filter: unset;
+            // background-color: unset;
+            // backdrop-filter: unset;
         }
     }
 }
@@ -149,7 +181,7 @@ p img {
     #app {
         // 头部标题
         .VPNavBarTitle.has-sidebar {
-            background-color: unset;
+            // background-color: unset;
             margin-right: 2rem;
         }
     }

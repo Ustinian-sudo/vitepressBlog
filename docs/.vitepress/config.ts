@@ -1,9 +1,21 @@
 import { nav } from './config/nav';
 import { sidebar } from './config/sidebar';
+import mdItCustomAttrs from 'markdown-it-custom-attrs';
+
 export default {
     title: 'Ustinian', //站点标题
     description: 'Ustinian的个人博客', //mate标签description，多用于搜索引擎抓取摘要
-    head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/avatar.png' }]],
+    head: [
+        ['link', { rel: 'icon', type: 'image/svg+xml', href: '/avatar.png' }],
+        [
+            'link',
+            {
+                rel: 'stylesheet',
+                href: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css',
+            },
+        ],
+        ['script', { src: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js' }],
+    ],
     themeConfig: {
         logo: '/avatar.png',
         algolia: {
@@ -19,6 +31,15 @@ export default {
             copyright: 'Copyright © 2022-10-10～present ustinian',
         },
         sidebar,
+    },
+    // markdown
+    markdown: {
+        config: md => {
+            // use more markdown-it plugins!
+            md.use(mdItCustomAttrs, 'image', {
+                'data-fancybox': 'gallery',
+            });
+        },
     },
     vite: {
         server: {

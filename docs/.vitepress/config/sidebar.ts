@@ -30,9 +30,13 @@ export const sidebar = {
             ],
         },
     ],
-    '/note/': [
-        {
-            items: [{ text: '归档', link: '/note/' }],
-        },
-    ],
+    // '/archives/tag': [
+    //     {
+    //         text: '分类',
+    //         items: [
+    //             { text: 'PHP', link: '/archives/blog/PHP/' },
+    //             { text: 'Vue', link: '/archives/blog/Vue/' },
+    //     ],
+    //     },
+    // ],
 };

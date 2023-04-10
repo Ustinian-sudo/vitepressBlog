@@ -8,6 +8,7 @@ import 'element-plus/dist/index.css';
 
 // 自定义组件
 import Bubble from '../components/animation/Bubble.vue';
+import Archives from '../components/public/Archives.vue';
 
 export default {
     ...DefaultTheme,
@@ -16,6 +17,8 @@ export default {
     enhanceApp({ app, router, siteData }) {
         // register global components
         app.use(ElementPlus);
-        app.use(Bubble);
+        app.component('Bubble', Bubble);
+        app.component('Archives', Archives);
+        // app.use(Bubble);
     },
 };

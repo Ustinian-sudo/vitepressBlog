@@ -10,109 +10,20 @@ export const NAV_LINK_DATA: NavData[] = [
         title: '常用工具',
         children: [
             {
-                icon: 'https://caniuse.com/img/favicon-128.png',
-                title: 'Can I use',
-                desc: '前端 API 兼容性查询',
-                link: 'https://caniuse.com',
+                icon: 'https://www.emojiall.com/favicon.ico',
+                title: 'Emoji 大全',
+                desc: 'Emoji 中文网大全',
+                link: 'https://www.emojiall.com/zh-hans',
             },
             {
-                icon: 'https://tinypng.com/images/apple-touch-icon.png',
-                title: 'TinyPNG',
-                desc: '在线图片压缩工具',
-                link: 'https://tinypng.com',
-            },
-            {
-                icon: 'https://tool.lu/favicon.ico',
-                title: '在线工具',
-                desc: '开发人员的工具箱',
-                link: 'https://tool.lu',
-            },
-            {
-                icon: '/icons/json-cn.ico',
-                title: 'Json 中文网',
-                desc: 'JSON 在线解析及格式化验证',
-                link: 'https://www.json.cn',
+                icon: 'https://regex101.com/static/assets/icon-144.png',
+                title: 'Regex101',
+                desc: '在线正则测试网站',
+                link: 'https://regex101.com/',
             },
         ],
     },
 
-    {
-        title: 'React 生态',
-        children: [
-            {
-                icon: 'https://zh-hans.reactjs.org/favicon.ico',
-                title: 'React',
-                desc: '用于构建用户界面的 JavaScript 库',
-                link: 'https://zh-hans.reactjs.org',
-            },
-            {
-                icon: 'https://reactrouter.com/favicon-light.png',
-                title: 'React Router',
-                desc: 'React 的声明式路由',
-                link: 'https://reactrouter.com',
-            },
-            {
-                icon: 'https://nextjs.org/static/favicon/safari-pinned-tab.svg',
-                title: 'Next.js',
-                desc: '一个用于 Web 的 React 框架',
-                link: 'https://nextjs.org',
-            },
-            {
-                icon: 'https://img.alicdn.com/tfs/TB1YHEpwUT1gK0jSZFhXXaAtVXa-28-27.svg',
-                title: 'UmiJS',
-                desc: '插件化的企业级前端应用框架',
-                link: 'https://umijs.org',
-            },
-            {
-                icon: 'https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png',
-                title: 'Ant Design',
-                desc: '一套企业级 UI 设计语言和 React 组件库',
-                link: 'https://ant.design',
-            },
-            {
-                icon: 'https://gw.alipayobjects.com/zos/bmw-prod/69a27fcc-ce52-4f27-83f1-c44541e9b65d.svg',
-                title: 'Ant Design Mobile',
-                desc: '构建移动 WEB 应用程序的 React 组件库',
-                link: 'https://mobile.ant.design',
-            },
-            {
-                icon: 'https://docs.pmnd.rs/apple-touch-icon.png',
-                title: 'Zustand',
-                desc: '一个小型、快速、可扩展的 React 状态管理解决方案',
-                link: 'https://docs.pmnd.rs/zustand/getting-started/introduction',
-            },
-            {
-                icon: 'https://valtio.pmnd.rs/favicon.ico',
-                title: 'Valtio',
-                desc: 'makes proxy-state simple for React and Vanilla',
-                link: 'https://valtio.pmnd.rs',
-            },
-            {
-                icon: 'https://jotai.org/favicon.svg',
-                title: 'Jotai',
-                desc: 'primitive and flexible state management for React',
-                link: 'https://jotai.org',
-            },
-            {
-                icon: 'https://cn.redux.js.org/img/redux.svg',
-                title: 'Redux',
-                desc: 'JavaScript 应用的状态容器，提供可预测的状态管理',
-                link: 'https://cn.redux.js.org',
-            },
-            {
-                icon: 'https://zh.mobx.js.org/assets/mobx.png',
-                title: 'MobX',
-                desc: '一个小型、快速、可扩展的 React 状态管理解决方案',
-                link: 'https://zh.mobx.js.org',
-            },
-            {
-                icon: 'https://ahooks.js.org/simple-logo.svg',
-                title: 'ahooks',
-                desc: '一套高质量可靠的 React Hooks 库',
-                link: 'https://ahooks.js.org/zh-CN',
-            },
-        ],
-    },
     {
         title: 'Vue 生态',
         children: [
@@ -139,12 +50,6 @@ export const NAV_LINK_DATA: NavData[] = [
                 title: 'Pinia',
                 desc: '符合直觉的 Vue.js 状态管理库',
                 link: 'https://pinia.vuejs.org/zh',
-            },
-            {
-                icon: 'https://nuxt.com/icon.png',
-                title: 'Nuxt.js',
-                desc: '一个基于 Vue.js 的通用应用框架',
-                link: 'https://nuxt.com',
             },
             {
                 icon: 'https://vueuse.org/favicon.svg',
@@ -182,20 +87,26 @@ export const NAV_LINK_DATA: NavData[] = [
                 desc: '京东风格的轻量级移动端组件库',
                 link: 'https://nutui.jd.com',
             },
+            {
+                icon: 'https://cdn.quasar.dev/logo-v2/svg/logo.svg',
+                title: 'Quasar',
+                desc: '基于Vue3的高性能组件库',
+                link: 'http://www.quasarchs.com/',
+            },
         ],
     },
     {
         title: 'JavaScript 框架类库',
         children: [
             {
-                icon: 'https://svelte.dev/svelte-logo-horizontal.svg',
+                icon: 'https://svelte.dev/favicon.png',
                 title: 'Svelte',
                 desc: '将声明性组件转换为精准高效更新 DOM 的 JavaScript 代码',
                 link: 'https://svelte.dev',
             },
             {
                 // icon: 'https://simpleicons.org/icons/jquery.svg',
-                icon: '/icons/jquery.svg',
+                icon: 'https://jquery.cuishifeng.cn/images/favicon.ico',
                 title: 'jQuery API 中文文档',
                 desc: '一个兼容多浏览器的 JavaScript 框架',
                 link: 'https://jquery.cuishifeng.cn',
@@ -223,13 +134,27 @@ export const NAV_LINK_DATA: NavData[] = [
                 desc: '一个功能类优先的 CSS 框架',
                 link: 'https://www.tailwindcss.cn',
             },
+            {
+                icon: 'https://webgradients.com/img/other/logos/webgradients_logo.png',
+                title: 'Webgradients',
+                desc: '一个渐变色调色网站',
+                link: 'https://webgradients.com/',
+            },
+            {
+                icon: {
+                    svg: '<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><rect width="128" height="128" rx="64" fill="#6CC1FF"/><g filter="url(#filter0_dddddd)"><rect x="28" y="-36" width="72" height="74" rx="10" fill="white"/></g></g><defs><filter id="filter0_dddddd" x="-39" y="-36" width="206" height="232" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="2.5182"/><feGaussianBlur stdDeviation="0.927031"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.168627 0 0 0 0 0.345098 0 0 0 0.138919 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="6.05159"/><feGaussianBlur stdDeviation="2.22778"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.168627 0 0 0 0 0.345098 0 0 0 0.176976 0"/><feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="11.3946"/><feGaussianBlur stdDeviation="4.19472"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.168627 0 0 0 0 0.345098 0 0 0 0.207455 0"/><feBlend mode="normal" in2="effect2_dropShadow" result="effect3_dropShadow"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="20.326"/><feGaussianBlur stdDeviation="7.48266"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.168627 0 0 0 0 0.345098 0 0 0 0.253717 0"/><feBlend mode="normal" in2="effect3_dropShadow" result="effect4_dropShadow"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="38.0176"/><feGaussianBlur stdDeviation="13.9955"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.168627 0 0 0 0 0.345098 0 0 0 0.345225 0"/><feBlend mode="normal" in2="effect4_dropShadow" result="effect5_dropShadow"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="91"/><feGaussianBlur stdDeviation="33.5"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.168627 0 0 0 0 0.345098 0 0 0 0.6 0"/><feBlend mode="normal" in2="effect5_dropShadow" result="effect6_dropShadow"/><feBlend mode="normal" in="SourceGraphic" in2="effect6_dropShadow" result="shape"/></filter><clipPath id="clip0"><rect width="128" height="128" rx="64" fill="white"/></clipPath></defs></svg>',
+                },
+                title: 'Smooth Shadow',
+                desc: 'Box Shadow调试网站',
+                link: 'https://shadows.brumm.af/?ref=undesign',
+            },
         ],
     },
     {
         title: 'Node 相关',
         children: [
             {
-                icon: 'https://nodejs.org/static/images/favicons/apple-touch-icon.png',
+                icon: 'https://nodejs.org/static/images/favicons/favicon.png',
                 title: 'Node.js',
                 desc: 'Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境',
                 link: 'https://nodejs.org/zh-cn',
@@ -261,7 +186,18 @@ export const NAV_LINK_DATA: NavData[] = [
         ],
     },
     {
-        title: '编译&构建&打包',
+        title: '算法',
+        children: [
+            {
+                icon: 'https://leetcode.cn/favicon.ico',
+                title: 'LeetCode',
+                desc: '力扣 (LeetCode) 全球极客挚爱的技术成长平台',
+                link: 'https://leetcode.cn/',
+            },
+        ],
+    },
+    {
+        title: '前端工程化',
         children: [
             {
                 icon: 'https://www.webpackjs.com/icon_180x180.png',
@@ -308,7 +244,7 @@ export const NAV_LINK_DATA: NavData[] = [
         ],
     },
     {
-        title: '前端学习资料',
+        title: '前端学习文档',
         children: [
             {
                 icon: 'https://developer.mozilla.org/apple-touch-icon.6803c6f0.png',
@@ -336,6 +272,12 @@ export const NAV_LINK_DATA: NavData[] = [
                 link: 'https://github.com',
             },
             {
+                title: 'Gitee',
+                icon: 'https://gitee.com/favicon.ico',
+                desc: '一个国内的代码托管平台',
+                link: 'https://gitee.com/',
+            },
+            {
                 icon: 'https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a',
                 title: 'Stack Overflow',
                 desc: '全球最大的技术问答网站',
@@ -348,53 +290,34 @@ export const NAV_LINK_DATA: NavData[] = [
                 link: 'https://juejin.cn',
             },
             {
-                title: 'V2EX',
-                icon: 'https://www.v2ex.com/static/icon-192.png',
-                desc: '一个关于分享和探索的地方',
-                link: 'https://www.v2ex.com',
-            },
-            {
                 title: 'SegmentFault 思否',
                 icon: 'https://static.segmentfault.com/main_site_next/0dc4bace/touch-icon.png',
                 desc: '技术问答开发者社区',
                 link: 'https://segmentfault.com',
             },
-            {
-                title: '博客园',
-                // icon: 'https://common.cnblogs.com/favicon.ico',
-                icon: '/icons/cnblogs.svg',
-                desc: '博客园是一个面向开发者的知识分享社区',
-                link: 'https://www.cnblogs.com',
-            },
-            {
-                title: '知乎',
-                icon: 'https://static.zhihu.com/heifetz/assets/apple-touch-icon-60.362a8eac.png',
-                desc: '中文互联网高质量的问答社区和创作者聚集的原创内容平台',
-                link: 'https://juejin.cn',
-            },
         ],
     },
-    {
-        title: '摸摸鱼',
-        children: [
-            {
-                icon: 'https://www.youtube.com/s/desktop/014dbbed/img/favicon_48x48.png',
-                title: 'YouTube',
-                desc: '',
-                link: 'https://www.youtube.com',
-            },
-            {
-                icon: '/icons/twitter.svg',
-                title: 'Twitter',
-                desc: '',
-                link: 'https://twitter.com',
-            },
-            {
-                icon: 'https://momoyu.cc/icon-192.png',
-                title: '摸摸鱼热榜',
-                // desc: '聚合每日热门、搞笑、有趣、适合摸鱼的资讯',
-                link: 'https://momoyu.cc',
-            },
-        ],
-    },
+    // {
+    //     title: '摸摸鱼',
+    //     children: [
+    //         {
+    //             icon: 'https://www.youtube.com/s/desktop/014dbbed/img/favicon_48x48.png',
+    //             title: 'YouTube',
+    //             desc: '',
+    //             link: 'https://www.youtube.com',
+    //         },
+    //         {
+    //             icon: '/icons/twitter.svg',
+    //             title: 'Twitter',
+    //             desc: '',
+    //             link: 'https://twitter.com',
+    //         },
+    //         {
+    //             icon: 'https://momoyu.cc/icon-192.png',
+    //             title: '摸摸鱼热榜',
+    //             // desc: '聚合每日热门、搞笑、有趣、适合摸鱼的资讯',
+    //             link: 'https://momoyu.cc',
+    //         },
+    //     ],
+    // },
 ];
