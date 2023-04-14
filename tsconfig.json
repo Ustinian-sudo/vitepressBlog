@@ -21,7 +21,8 @@
     },
     "include": [
         "docs/.vitepress/**/*.ts",
-        "docs/.vitepress/**/*.vue"
+        "docs/.vitepress/**/*.vue",
+        "@types"
         // "**/*.ts",
         // "**/*.d.ts",
         // "**/*.vue"

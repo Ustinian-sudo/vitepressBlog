@@ -1,6 +1,6 @@
 # WampServer 相关问题
 
-> wampserver 版本 3.2.6 64 Bits
+> wampserver 版本 3.2.6 64 Bits，系统 windows 10
 
 ## Apache
 
@@ -27,6 +27,8 @@ Required local -> Require all granted
 
 3. 进入 httpd-vhosts.conf,同 2 一样修改
 
+>注意：若依旧无法访问，需要查看本地的防火墙是否关闭，若不想关闭防火墙，可以添加入站规则，放开apache的端口，提供外网访问。
+
 ## Mysql
 
 > MySQL 版本 5.7.36
@@ -40,15 +42,15 @@ Required local -> Require all granted
 1. 打开 phpMyadmin,选择 MySQL 服务器直接登录。
 2. 点击界面上的账户
 
-![image-20230321163802852](http://ustinian077.top/image-20230321163802852.png)
+![image-20230321163802852](http://qiniu.ustinian077.top.top/image-20230321163802852.png)
 
 3. 勾选 root 用户后，选择修改权限
 
-![image-20230321163848103](http://ustinian077.top/image-20230321163848103.png)
+![image-20230321163848103](http://qiniu.ustinian077.top.top/image-20230321163848103.png)
 
 4. 选择 Change password(修改密码)，输入密码后执行。
 
-![image-20230321164305078](http://ustinian077.top/image-20230321164305078.png)
+![image-20230321164305078](http://qiniu.ustinian077.top.top/image-20230321164305078.png)
 
 ## PHP
 
@@ -64,7 +66,7 @@ Required local -> Require all granted
 
 在微软的官方地址这[Microsoft Drivers for PHP 发行说明 - PHP drivers for SQL Server | Microsoft Learn](https://learn.microsoft.com/zh-cn/sql/connect/php/release-notes-php-sql-driver?view=sql-server-ver16)根据自己的版本号找到对应的驱动程序，我自己的版本是`7.4.26` 因此下载`5.10`版本的驱动程序
 
-![image-20230323165519502](http://ustinian077.top/image-20230323165519502.png)
+![image-20230323165519502](http://qiniu.ustinian077.top.top/image-20230323165519502.png)
 
 3. 解压文件
 
@@ -72,7 +74,7 @@ Required local -> Require all granted
 
 >注意：ts 代表的是线程安全 nts 代表的是线程不安全 根据自己的需要选择，一般选择ts版本。x64 代表 64bit 根据自己电脑系统来选择。
 
-![image-20230323170104420](http://ustinian077.top/image-20230323170104420.png)
+![image-20230323170104420](http://qiniu.ustinian077.top.top/image-20230323170104420.png)
 
 4. 配置`php.ini`
 
@@ -99,7 +101,7 @@ extension=php_sqlsrv_74_ts_x64.dll
 
 打开apache网页，http://localhost:8080/?phpinfo=-1 (端口号自己定义的)，搜索sqlsrv看到`pdo_sqlsrv`信息代表引入拓展成功
 
-![image-20230323171521557](http://ustinian077.top/image-20230323171521557.png)
+![image-20230323171521557](http://qiniu.ustinian077.top.top/image-20230323171521557.png)
 
 6. 代码测试
 
@@ -124,4 +126,6 @@ if( $conn == false)
 }
 ```
 
-![image-20230323172529493](http://ustinian077.top/image-20230323172529493.png)
+效果图如下：
+
+![image-20230323172529493](http://qiniu.ustinian077.top.top/image-20230323172529493.png)
