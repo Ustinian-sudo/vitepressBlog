@@ -89,7 +89,7 @@
 2. 安装第三方依赖
 
  创建一个`hello.go`文件，内容如下：
-
+git
 ```go
 package main
 
