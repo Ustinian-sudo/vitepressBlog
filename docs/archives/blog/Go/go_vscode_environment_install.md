@@ -46,7 +46,7 @@
 
  打开控制台（win+r，输入 cmd，回车），输入 go version，就可以看到 go 的版本信息了。
 
-![image-20230412111807414](http://qiniu.ustinian077.top/image-20230412111807414.png)
+![image-20230412111807414](https://qiniu.ustinian077.top/image-20230412111807414.png)
 
 ### 3. 配置 GOPATH 工作目录（可跳过）
 
@@ -54,26 +54,19 @@
 
  自定义创建 GOPATH 目录，例如：E:\gowork，并在目录下创建 src、pkg、bin 三个文件夹。
 
-![img](http://qiniu.ustinian077.top/1235697-20190218223030338-1867662830.png)
+![img](https://qiniu.ustinian077.top/1235697-20190218223030338-1867662830.png)
 
  打开 我的电脑 - （右键）属性 - 高级系统设置 - 环境变量，新增一个系统环境变量 GOPATH。
 
-![img](http://qiniu.ustinian077.top/1235697-20190218225425690-1353699465.png)
+![img](https://qiniu.ustinian077.top/1235697-20190218225425690-1353699465.png)
 
  打开控制台(win+r,输入 cmd，按回车)，输入 go env 查看 go 配置信息，
 
-![img](http://qiniu.ustinian077.top/1235697-20190218230016332-1394149958.png)
+![img](https://qiniu.ustinian077.top/1235697-20190218230016332-1394149958.png)
 
 > 注意：如果 GOPATH 没有变成我们配置的路径，可以重启下电脑 or 等，至于为什么，不清楚~，大概是系统还没更新到最新的参数吧。
 
 ### 4. 常用的 god mod 命令
-
-
-
-
-
-
-
 
 
 
@@ -84,7 +77,7 @@
 
  点击 Extensions - 搜索 Go - 下载
 
-![image-20230412144953871](http://qiniu.ustinian077.top/image-20230412144953871.png)
+![image-20230412144953871](https://qiniu.ustinian077.top/image-20230412144953871.png)
 
 2. 安装第三方依赖
 
@@ -103,7 +96,7 @@ func main() {
 
  此时，当你保存文件的时候会有提示要安装第三方依赖，点击 install all 即可。或者在 Vscode 里面按下`ctrl+shift+p`键找到`Go:Install/Update Tools`，勾选所有，点击 OK 即可。
 
-![image-20230412145329956](http://qiniu.ustinian077.top/image-20230412145329956.png)
+![image-20230412145329956](https://qiniu.ustinian077.top/image-20230412145329956.png)
 
 3. 全球模块代理
 

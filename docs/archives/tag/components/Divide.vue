@@ -1,6 +1,12 @@
 <script lang="ts" setup>
 import '/public/font/iconfont.js';
 import '/public/font/iconfont.css';
+
+const props = defineProps<{
+    data: Array<any>;
+}>();
+
+
 </script>
 
 <template>

@@ -23,6 +23,11 @@ export const CATALOG_DATA = [
                 link: '/archives/blog/PHP/wampserver_question',
                 date: '03-22',
             },
+            {
+                title: 'wampserver相关问题',
+                link: '/archives/blog/PHP/wampserver_question',
+                date: '03-22',
+            },
         ],
     },
     {

@@ -3,10 +3,9 @@ layout: page
 ---
 
 <script setup>
-import { CATALOG_DATA } from './data'
+import { TAG_DATA } from './data'
 import Divide from './components/Divide.vue'
 </script>
 
-<Divide></Divide>
+<Divide :data="TAG_DATA"></Divide>
 
-<!-- <Archives title="Catalog" :data="CATALOG_DATA"></Archives> -->
