@@ -2,18 +2,6 @@ type NavData = {
     title: string;
 };
 
-export const TAG_DATA = [
-    {
-        title: 'PHP',
-        children: [
-            {
-                title: 'wampserver相关问题',
-                date: '10-21',
-            },
-        ],
-    },
-];
-
 export const CATALOG_DATA = [
     {
         title: '2023',
@@ -24,9 +12,9 @@ export const CATALOG_DATA = [
                 date: '03-22',
             },
             {
-                title: 'wampserver相关问题',
-                link: '/archives/blog/PHP/wampserver_question',
-                date: '03-22',
+                title: 'Go + Vscode 开发环境搭建',
+                link: '/archives/blog/Go/go_vscode_environment_install',
+                date: '08-03',
             },
         ],
     },

@@ -14,15 +14,4 @@ export const TAG_DATA = [
     },
 ];
 
-export const CATALOG_DATA = [
-    {
-        title: '2023',
-        chilren: [
-            {
-                title: 'wampserver相关问题',
-                link: '/archives/blog/PHP/wampserver_question',
-                date: '03-22',
-            },
-        ],
-    },
-];
+
