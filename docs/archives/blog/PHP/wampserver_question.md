@@ -99,7 +99,7 @@ extension=php_sqlsrv_74_ts_x64.dll
 
 5. 重启wampserver，测试效果
 
-打开apache网页，http://localhost:8080/?phpinfo=-1 (端口号自己定义的)，搜索sqlsrv看到`pdo_sqlsrv`信息代表引入拓展成功
+打开apache网页，<a href="http://localhost:8080/?phpinfo=-1" target="_blank" rel="noreferrer">http://localhost:8080/?phpinfo=-1</a> (端口号自己定义的)，搜索sqlsrv看到`pdo_sqlsrv`信息代表引入拓展成功
 
 ![image-20230323171521557](https://qiniu.ustinian077.top/image-20230323171521557.png)
 
