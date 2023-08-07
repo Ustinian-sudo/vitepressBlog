@@ -1,8 +1,12 @@
 import { nav } from './config/nav';
 import { sidebar } from './config/sidebar';
 import mdItCustomAttrs from 'markdown-it-custom-attrs';
-export default {
+import { defineConfig } from 'vitepress';
+import path from 'path';
+
+export default defineConfig({
     title: 'Ustinian', //站点标题
+    ignoreDeadLinks: true,
     description: 'Ustinian的个人博客', //mate标签description，多用于搜索引擎抓取摘要
     head: [
         ['link', { rel: 'icon', type: 'image/svg+xml', href: '/avatar.png' }],
@@ -17,10 +21,10 @@ export default {
     ],
     themeConfig: {
         logo: '/avatar.png',
-        algolia: {
-            apiKey: 'your_api_key',
-            indexName: 'index_name',
-        },
+        // algolia: {
+        //     apiKey: 'your_api_key',
+        //     indexName: 'index_name',
+        // },
         nav,
         socialLinks: [{ icon: 'github', link: 'https://github.com/Ustinian-sudo' }], // 社交链接
 
@@ -53,5 +57,10 @@ export default {
                 },
             },
         },
+        resolve: {
+            alias: {
+                '@': path.resolve(__dirname, './'),
+            },
+        },
     },
-};
+});
