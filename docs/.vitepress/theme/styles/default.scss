@@ -47,11 +47,22 @@ body {
                 }
             }
         }
+
+        .VPNavBarMenu {
+            // 二级导航项
+            .VPNavBarMenuGroup {
+                .menu {
+                    left: 0;
+                }
+            }
+        }
     }
+    // 侧边栏
     .VPSidebar {
         border-right: 1px solid var(--vp-c-divider);
         // background: rgba(255, 255, 255, 0.4);
     }
+    // 内容
     .VPContent {
         // background: rgba(244, 244, 244, 0.5);
         // background-color: antiquewhite;

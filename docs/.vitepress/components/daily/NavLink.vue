@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
-import type { NavLink } from '../types';
+import type { NavLink } from './types';
 import { slugify } from '@mdit-vue/shared';
 
 const props = defineProps<{

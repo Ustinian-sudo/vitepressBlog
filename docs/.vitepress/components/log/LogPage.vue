@@ -1,6 +1,6 @@
-<script lang="ts" setup>
-import Badge from '../../.vitepress/components/tools/Badge.vue';
-</script>
+<!-- <script lang="ts" setup>
+import Badge from '/tools/Badge.vue';
+</script> -->
 
 <template>
     <div class="logPage">

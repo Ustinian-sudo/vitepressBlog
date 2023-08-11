@@ -1,10 +1,8 @@
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue';
-
 const props = defineProps({
     src: String,
-    width: Number,
-    height: Number,
+    width: String,
+    height: String,
 })
 </script>
 

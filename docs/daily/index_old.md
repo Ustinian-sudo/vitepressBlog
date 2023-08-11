@@ -1,7 +1,3 @@
-<script setup>
-import Bubble from '../.vitepress/components/animation/Bubble.vue'
-</script>
-
 <Bubble/>
 
 ::: tip

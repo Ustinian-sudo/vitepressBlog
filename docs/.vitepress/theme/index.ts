@@ -6,9 +6,10 @@ import './styles/default.scss';
 import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
 
-// 自定义组件
+// 自定义全局组件
 import Bubble from '../components/animation/Bubble.vue';
-import Archives from '../components/public/Archives.vue';
+import Archives from '/.vitepress/components/archives/Archives.vue';
+import Badge from '../components/tools/Badge.vue';
 
 export default {
     ...DefaultTheme,
@@ -19,6 +20,6 @@ export default {
         app.use(ElementPlus);
         app.component('Bubble', Bubble);
         app.component('Archives', Archives);
-        // app.use(Bubble);
+        app.component('Badge', Badge);
     },
 };

@@ -1,5 +1,6 @@
 <script setup>
-import ImageLogo from '../.vitepress/components/tools/ImageLogo.vue'
+// import ImageLogo from '../.vitepress/components/tools/ImageLogo.vue'
+import ImageLogo from '@/components/tools/ImageLogo.vue';
 </script>
 <p style=" color: rgb(168, 168, 168);">updated 📅 20 Feb 2023 | 📓 213 字 |  🕐︎ 1 分钟读完</p>
 

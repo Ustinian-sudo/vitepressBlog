@@ -1,28 +1,26 @@
 <script lang="ts" setup>
-import '/public/font/iconfont.js';
-import '/public/font/iconfont.css';
+// import '~/font/iconfont.js';
+// import '~/font/iconfont.css';
 
 const props = defineProps<{
     data: Array<any>;
 }>();
-
-
 </script>
 
 <template>
     <div class="divide-container">
         <div class="divide-left">
             <div class="post-list">
-                <div class="post-item card-box" v-for="item in 20">
+                <div class="post-item card-box" v-for="(item, index) in 20">
                     <div class="post-header">Git修改分支名</div>
                     <div class="post-info">
                         <span>
                             <i class="iconfont icon-user"></i>
-                            xugaoyi
+                            xugaoyi {{ item }}
                         </span>
                         <span>
                             <i class="iconfont icon-date"></i>
-                            2023-10-01
+                            2023-10-01 {{ index }}
                         </span>
                     </div>
                 </div>
@@ -99,6 +97,7 @@ const props = defineProps<{
             </div>
         </div>
     </div>
+    <div></div>
 </template>
 
 <style lang="scss" scoped>

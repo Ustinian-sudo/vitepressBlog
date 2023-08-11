@@ -1,7 +1,5 @@
 <script setup>
-import NavLinks from './components/NavLinks.vue'
-import Bubble from '../.vitepress/components/animation/Bubble.vue'
-
+import NavLinks from '/.vitepress/components/daily/NavLinks.vue'
 import { NAV_LINK_DATA } from './data'
 </script>
 
