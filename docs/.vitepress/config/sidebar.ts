@@ -27,6 +27,7 @@ export const sidebar = {
                 { text: '2023-01', link: '/daily/2023-01' },
                 { text: '2023-02', link: '/daily/2023-02' },
                 { text: '2023-03', link: '/daily/2023-03' },
+                { text: '2023-09', link: '/daily/2023-09' },
             ],
         },
     ],

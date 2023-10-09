@@ -103,9 +103,11 @@ extension=php_sqlsrv_74_ts_x64.dll
 
 ![image-20230323171521557](https://qiniu.ustinian077.top/image-20230323171521557.png)
 
+> 注：若配置`php.ini`不生效，再到 wamp64的bin目录下找到php所对应的版本修改其`phpForApache.ini`文件后，重新启动一遍，修改步骤同4相同
+
 6. 代码测试
 
-> 注意：若电脑未安装SQL Server ODBC驱动程序，则需要自行安装下ODBC驱动源，地址：[下载 ODBC Driver for SQL Server - ODBC Driver for SQL Server | Microsoft Learn](https://learn.microsoft.com/zh-cn/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16)下载最新版本即可。
+> 注：若电脑未安装SQL Server ODBC驱动程序，则需要自行安装下ODBC驱动源，地址：[下载 ODBC Driver for SQL Server - ODBC Driver for SQL Server | Microsoft Learn](https://learn.microsoft.com/zh-cn/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver16)下载最新版本即可。
 
 代码测试如下：
 
