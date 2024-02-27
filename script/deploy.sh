@@ -7,7 +7,7 @@ set -e
 npm run build
 
 # 进入待发布的目录
-cd docs/.vitepress/dist
+cd .vitepress/dist
 
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
