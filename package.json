@@ -3,27 +3,32 @@
 	"version": "1.0.0",
 	"description": "my blod",
 	"main": "index.js",
+	"type": "module",
 	"config": {
 		"commitizen": {
 			"path": "node_modules/cz-customizable"
 		}
 	},
 	"scripts": {
-		"start": "vitepress dev docs",
-		"build": "vitepress build docs",
+		"start": "vitepress dev",
+		"build": "vitepress build",
 		"git": "git add . && git cz"
 	},
 	"author": "ustinian",
 	"license": "ISC",
 	"devDependencies": {
-		"vitepress": "^1.0.0-beta.7",
+		"vitepress": "^1.0.0-rc.44",
 		"vue": "^3.2.40"
 	},
 	"dependencies": {
 		"@mdit-vue/shared": "^0.12.0",
+		"@types/fs-extra": "^11.0.4",
 		"commitizen": "^4.3.0",
 		"cz-customizable": "^7.0.0",
 		"element-plus": "^2.2.17",
+		"fs-extra": "^11.2.0",
+		"globby": "^14.0.1",
+		"gray-matter": "^4.0.3",
 		"markdown-it-custom-attrs": "^1.0.2",
 		"sass": "^1.55.0",
 		"sass-loader": "^13.1.0"

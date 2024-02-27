@@ -1,0 +1,25 @@
+#app {
+	min-height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.theme {
+	background-color: var(--vp-c-bg);
+}
+
+.vp-doc h2 {
+	margin-top: 0;
+	border-top: none;
+}
+
+.vp-doc p img {
+	border: 0.3em solid #e0dfcc;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	border-radius: 1em;
+}
+
+.VPDocOutlineDropdown {
+	display: none !important;
+}

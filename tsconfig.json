@@ -1,34 +1,31 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "outDir": "dist",
-        "allowJs": true,
-        "module": "esnext",
-        "moduleResolution": "node",
-        "strict": true,
-        "jsx": "preserve",
-        "esModuleInterop": true,
-        "noUnusedLocals": true,
-        "lib": [
-            "ESNext",
-            "DOM"
-        ],
-        "skipLibCheck": true,
-        "typeRoots": [
-            "node_modules/@types",
-            "@types"
-        ]
-    },
-    "include": [
-        "docs/.vitepress/**/*.ts",
-        "docs/.vitepress/**/*.vue",
-        "@types"
-        // "**/*.ts",
-        // "**/*.d.ts",
-        // "**/*.vue"
-        // "docs",
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+	"compilerOptions": {
+		"baseUrl": ".",
+		"outDir": "dist",
+		"allowJs": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"strict": true,
+		"jsx": "preserve",
+		"esModuleInterop": true,
+		"noUnusedLocals": true,
+		"lib": [
+			"ESNext",
+			"DOM",
+			"DOM.Iterable" // 解决 Nodelist 报错问题
+		],
+		"skipLibCheck": true,
+		"target": "es6",
+		"typeRoots": ["node_modules/@types", "@types"]
+	},
+	"include": [
+		".vitepress/**/*.ts",
+		".vitepress/**/*.vue",
+		"@types"
+		// "**/*.ts",
+		// "**/*.d.ts",
+		// "**/*.vue"
+		// "docs",
+	],
+	"exclude": ["node_modules"]
 }
