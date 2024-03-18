@@ -14,7 +14,7 @@ type pageData = {
 };
 //@ts-ignore
 const pageData: pageData = useData().page;
-console.log(pageData)
+// console.log(pageData)
 const publishDate = ref("");
 dayjs.extend(relativeTime);
 onContentUpdated(() => {

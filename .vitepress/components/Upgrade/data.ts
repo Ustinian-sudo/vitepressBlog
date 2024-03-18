@@ -13,28 +13,31 @@
  */
 
 export const LOG_INFO = [
-    {
+	{
+		date: '2024/03/15',
+		version: '1.0.0-beta.3',
+		desc: [
+			{
+				type: 'Fixed',
+				content: ['· Sort 分类页面"全部"标签数目错误问题']
+			}
+		]
+	},
+	{
 		date: '2024/02/23',
 		version: '1.0.0-beta.2',
 		desc: [
-            {
+			{
 				type: 'Features',
-				content: [
-                    '· 新增学习导航页面',
-                ]
+				content: ['· 新增学习导航页面']
 			},
-            {
+			{
 				type: 'Fixed',
-				content: [
-                    '· 修复 Buddle 气泡组件被遮挡问题',
-                ]
+				content: ['· 修复 Buddle 气泡组件被遮挡问题']
 			},
 			{
 				type: 'Changed',
-				content: [
-                    '· 重构 Home、Guide、About 等页面',
-                    '· 重构页面 CSS 样式',
-                ]
+				content: ['· 重构 Home、Guide、About 等页面', '· 重构页面 CSS 样式']
 			}
 		]
 	},
@@ -44,9 +47,7 @@ export const LOG_INFO = [
 		desc: [
 			{
 				type: 'Features',
-				content: [
-                    '· 初步构建成 blog 网站',
-                ]
+				content: ['· 初步构建成 blog 网站']
 			}
 		]
 	}

@@ -44,14 +44,6 @@ const svg = computed(() => {
 </template>
 
 <style lang="scss" scoped>
-// .vp-doc a {
-//     text-decoration: none;
-// }
-
-// .showGap {
-//     margin-right: 20px;
-//     margin-bottom: 20px;
-// }
 
 .nav-link {
     flex: 1;

@@ -10,7 +10,7 @@ const { theme } = useData()
 
 // 文章列表
 let postsAll = theme.value.posts || []
-console.log("postsAll", postsAll)
+// console.log("postsAll", postsAll)
 // 文章总数
 let postLength = theme.value.postLength
 // 每页文章数

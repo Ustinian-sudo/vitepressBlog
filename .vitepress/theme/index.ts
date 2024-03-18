@@ -6,6 +6,11 @@ import './styles/default.scss';
 import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
 
+// iconfont
+import '../../public/font/iconfont.js';
+import '../../public/font/iconfont.css';
+
+
 // 自定义全局组件
 // import Bubble from '../components/Animation/Bubble.vue';
 // import Archives from '/.vitepress/components/archives/Archives.vue';

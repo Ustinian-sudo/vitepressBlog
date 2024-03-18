@@ -35,7 +35,13 @@ async function config() {
 			pageSize: 5,
 			postLength: await getPostLength(),
 			socialLinks: [{ icon: 'github', link: 'https://github.com/Ustinian-sudo' }], // 社交链接
-
+      // lastUpdated: {
+      //   text: 'Updated at',
+      //   formatOptions: {
+      //     dateStyle: 'full',
+      //     timeStyle: 'medium'
+      //   }
+      // },
 			// // 底部
 			// footer: {
 			//     message: 'Released under the MIT License.',

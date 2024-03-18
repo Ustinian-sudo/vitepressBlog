@@ -1,95 +1,51 @@
 <script lang="ts" setup>
+import { computed, ref } from 'vue'
+import { useData, withBase } from 'vitepress'
+import { initTags } from '../../utils/tags'
 
-const props = defineProps<{
-    data: Array<any>;
-}>();
+const { theme } = useData()
+const data = computed(() => initTags(theme.value.posts))
+let selectTag = ref<any>("全部");
+const toggleTag = (tag: any) => {
+    selectTag.value = tag;
+};
 </script>
 
 <template>
-    <div class="divide-container">
-        <div class="divide-left">
-            <div class="post-list">
-                <div class="post-item card-box" v-for="(item, index) in 20">
-                    <div class="post-header">Git修改分支名</div>
+    <div class="sort-container">
+        <div class="sort-left">
+            <div class="post-list" v-show="selectTag">
+                <div class="post-item card-box" v-for="item in data[selectTag]">
+                    <div class="post-header">
+                        <a :href="withBase(item.regularPath)">
+                            {{ item.frontMatter.title }}
+                        </a>
+                    </div>
+
                     <div class="post-info">
                         <span>
                             <i class="iconfont icon-user"></i>
-                            xugaoyi {{ item }}
+                            {{ item.frontMatter.author }}
                         </span>
                         <span>
                             <i class="iconfont icon-date"></i>
-                            2023-10-01 {{ index }}
+                            {{ item.frontMatter.date }}
                         </span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="divide-right">
-            <div class="divide-wrapper card-box">
+        <div class="sort-right">
+            <div class="sort-wrapper card-box">
                 <div class="wrapper-header">
                     <i class="iconfont icon-fenlei"></i>
                     全部分类
                 </div>
                 <div class="wrapper-list">
-                    <div class="wrapper-item active">
-                        <span>更多</span>
-                        <span class="num">12</span>
-                    </div>
-                    <div class="wrapper-item">
-                        <span>更多</span>
-                        <span class="num">12</span>
-                    </div>
-                    <div class="wrapper-item">
-                        <span>更多</span>
-                        <span class="num">12</span>
-                    </div>
-                    <div class="wrapper-item">
-                        <span>更多</span>
-                        <span class="num">12</span>
-                    </div>
-                    <div class="wrapper-item">
-                        <span>更多</span>
-                        <span class="num">12</span>
-                    </div>
-                    <div class="wrapper-item active">
-                        <span>更多</span>
-                        <span class="num">12</span>
-                    </div>
-                    <div class="wrapper-item">
-                        <span>更多</span>
-                        <span class="num">12</span>
-                    </div>
-                    <div class="wrapper-item">
-                        <span>更多</span>
-                        <span class="num">12</span>
-                    </div>
-                    <div class="wrapper-item">
-                        <span>更多</span>
-                        <span class="num">12</span>
-                    </div>
-                    <div class="wrapper-item">
-                        <span>更多</span>
-                        <span class="num">12</span>
-                    </div>
-                    <div class="wrapper-item active">
-                        <span>更多</span>
-                        <span class="num">12</span>
-                    </div>
-                    <div class="wrapper-item">
-                        <span>更多</span>
-                        <span class="num">12</span>
-                    </div>
-                    <div class="wrapper-item">
-                        <span>更多</span>
-                        <span class="num">12</span>
-                    </div>
-                    <div class="wrapper-item">
-                        <span>更多</span>
-                        <span class="num">12</span>
-                    </div>
-                    <div class="wrapper-item">
-                        <span>更多</span>
-                        <span class="num">12</span>
+                    <div @click="toggleTag(key)" :class="['wrapper-item', { active: selectTag === key }]"
+                        v-for="(item, key) in data">
+                        <span>{{ key }}</span>
+                        <span class="num">{{ item.length }}</span>
                     </div>
                 </div>
             </div>
@@ -99,15 +55,33 @@ const props = defineProps<{
 </template>
 
 <style lang="scss" scoped>
+// @keyframes fadeIn {
+//     0% {
+//         opacity: 0;
+//         /* 初始状态：完全透明 */
+//     }
+
+//     50% {
+//         opacity: 0.5;
+//         /* 中间状态：半透明 */
+//     }
+
+//     100% {
+//         opacity: 1;
+//         /* 最终状态：完全不透明 */
+//     }
+// }
 .card-box {
     border-radius: 5px;
-    background: #fff;
+    background: var(--vp-c-bg-soft);
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.5s;
+    // transition: box-shadow 0.5s;
+
     &:hover {
         box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.1);
     }
 }
+
 .active {
     background: #11a8cd !important;
     color: #fff !important;
@@ -115,26 +89,33 @@ const props = defineProps<{
     border-radius: 1px;
     border-color: transparent;
 }
-.divide-container {
+
+.sort-container {
     display: flex;
     max-width: 1100px;
     margin: 0 auto;
     margin-top: 50px;
-    .divide-left {
+    padding-bottom: 4rem;
+
+    .sort-left {
         flex: 1;
+
         .post-list {
             .post-item {
                 padding: 1rem 1.5rem;
                 margin-bottom: 0.8rem;
-                transition: all 0.3s;
+                // transition: all 0.3s;
+
                 .post-header {
                     font-size: 1.4rem;
                     margin: 0.5rem 0;
                     cursor: pointer;
+
                     &:hover {
                         color: #11a8cd;
                     }
                 }
+
                 .post-info {
                     span {
                         opacity: 0.7;
@@ -146,24 +127,29 @@ const props = defineProps<{
             }
         }
     }
-    .divide-right {
+
+    .sort-right {
         width: 245px;
+
         .card-box {
+            // width: 100%;
+            width: inherit;
             margin: 0 0 0.8rem 0.8rem;
             padding-top: 0.95rem;
             padding-bottom: 0.95rem;
         }
-        .divide-wrapper {
-            flex: 1;
-            position: sticky;
-            top: 4.5rem;
-            max-height: calc(100vh - 10rem);
+
+        .sort-wrapper {
+            position: fixed;
+            // max-height: calc(100vh - 10rem);
             min-height: 4.2rem;
+
             .wrapper-header {
                 opacity: 0.9;
                 font-size: 1.2rem;
-                padding: 8px 0.95rem 7px;
+                padding: 0px 0.95rem 7px;
             }
+
             .wrapper-list {
                 .wrapper-item {
                     display: flex;
@@ -181,14 +167,17 @@ const props = defineProps<{
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     cursor: pointer;
+
                     &:hover {
                         color: #11a8cd;
                         background: #f8f8f8;
                         border-color: #11a8cd;
                     }
+
                     span {
                         display: inline-block;
                     }
+
                     .num {
                         background-color: #00323c;
                         color: #fff;
@@ -209,12 +198,14 @@ const props = defineProps<{
 }
 
 @media (max-width: 719px) {
-    .divide-container {
+    .sort-container {
         margin: 0.9rem 0;
         padding: 0;
         display: block;
-        .divide-right {
+
+        .sort-right {
             width: 100%;
+
             .card-box {
                 margin: 0 0 0.9rem;
                 border-radius: 0;
