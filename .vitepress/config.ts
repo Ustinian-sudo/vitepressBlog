@@ -30,24 +30,24 @@ async function config() {
 			//     indexName: 'index_name',
 			// },
 			nav,
-            dailyPosts: await getPosts('posts/daily/'),
+			dailyPosts: await getPosts('posts/daily/'),
 			posts: await getPosts(),
 			pageSize: 5,
 			postLength: await getPostLength(),
 			socialLinks: [{ icon: 'github', link: 'https://github.com/Ustinian-sudo' }], // 社交链接
-      // lastUpdated: {
-      //   text: 'Updated at',
-      //   formatOptions: {
-      //     dateStyle: 'full',
-      //     timeStyle: 'medium'
-      //   }
-      // },
+			// lastUpdated: {
+			//   text: 'Updated at',
+			//   formatOptions: {
+			//     dateStyle: 'full',
+			//     timeStyle: 'medium'
+			//   }
+			// },
 			// // 底部
 			// footer: {
 			//     message: 'Released under the MIT License.',
 			//     copyright: 'Copyright © 2022-10-10～present ustinian',
 			// },
-            
+
 			sidebar,
 			// 修改成右侧aside自定义显示层级
 			aside: false,
@@ -61,7 +61,7 @@ async function config() {
 				md.use(mdItCustomAttrs, 'image', {
 					'data-fancybox': 'gallery'
 				})
-			}
+			},
 		},
 		vite: {
 			server: {
