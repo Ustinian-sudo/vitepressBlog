@@ -1,7 +1,7 @@
 ---
 author: Ustinian
-title: OpenSSL 的使用详解
-description: OpenSSL 的使用详解
+title: OpenSSL 的常用操作
+description: OpenSSL 的常用操作
 date: 2024-03-25
 tags:
   - SSL
@@ -20,13 +20,15 @@ OpenSSL 是目前最流行的 SSL 密码库工具，其提供了一个通用、�
 > 官网：https://www.openssl.org/ <br>
 > 其它下载渠道：https://slproweb.com/products/Win32OpenSSL.html
 
-下面列表选择最新的下载，一直下一步下载即可。下载完成后配置一下环境变量（老生常谈了）。
+下面列表选择最新的下载，一直“下一步”下载即可。下载完成后配置一下环境变量（老生常谈了）。
 
 ![alt text](img/image-8.png)
 
 ### 二、使用
 
 #### 1. RSA 密钥操作
+
+`RSA` 是一种非对称加密算法，其密钥由两个密钥组成：公钥和私钥。公钥和私钥是一对，如果用公钥对数据进行加密，只有用对应的私钥才能解密。`RSA` 密钥操作是 `OpenSSL` 中的一个重要功能，可以用来生成 `RSA` 密钥对，以及使用 `RSA` 密钥对对数据进行加密和解密。
 
 默认情况下，`OpenSSL` 输出格式为 `PKCS#1-PEM` 格式
 
@@ -66,7 +68,7 @@ openssl rsa -in rsa_aes_private.key -passin pass:123456 -pubout -out rsa_aes_pub
 
 自签名证书顾名思义就是用户自己给自己签发的证书。自签名证书是免费的，但通常不受浏览器和其他客户端的信任。
 
-自签名证书又分成两种一种是带 CA 签名的，一种是不带 CA 签名的。
+自签名证书又分成两种一种是`带 CA 签名`的，一种是`不带 CA 签名`的。
 
 - 不带 CA 签名（自签私有证书）
 
@@ -177,8 +179,8 @@ openssl verify -CAfile private_CA_cert/intermediate_CA/ca.crt private_CA_cert/cl
 
 提示如下则说明验证通过：
 
-> error 2 表示找不到颁发者证书。如果找到不受信任证书的颁发者证书，就会出现这种情况 <br>
-> 1 depth 表示出错证书在证书链中深度
+> error 2：表示找不到颁发者证书。如果找到不受信任证书的颁发者证书，就会出现这种情况 <br>
+> 1 depth：表示出错证书在证书链中深度
 
 ![alt text](img/image-11.png)
 
@@ -190,9 +192,13 @@ openssl verify -CAfile private_CA_cert/intermediate_CA/ca.crt private_CA_cert/cl
 
 #### 4. OpenSSL 生成脚本
 
-是不是感觉上面一套下来很麻烦，其实可以使用脚本来生成证书。这里我推荐一个脚本，使用起来非常方便。
+考虑到以上步骤比较繁琐，这里推荐一个脚本，使用起来比较方便。
 
 > 脚本地址：<https://github.com/fufuok/FF.openssl.sh>
+
+### 三、总结
+
+以上是一些常用的 OpenSSL 操作，关于 OpenSSL 还有很多其它强大的功能，比如对对称加密算法的支持、P12 文件生成等等。通过这些操作可以更好地理解和使用 OpenSSL 来进行安全通信。
 
 ## 参考资料
 
@@ -203,7 +209,3 @@ openssl verify -CAfile private_CA_cert/intermediate_CA/ca.crt private_CA_cert/cl
 [3]. [利用 CA 私钥和证书创建中间 CA](https://www.cnblogs.com/Security-Darren/p/4079605.html)
 
 [4]. [自签名证书和 CA 证书的区别和制作、使用](https://www.cnblogs.com/zhaobowen/p/13321578.html#2%E7%A7%81%E6%9C%89ca%E8%AE%A4%E8%AF%81)
-
-```
-
-```

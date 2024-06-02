@@ -30,7 +30,7 @@ async function config() {
 			//     indexName: 'index_name',
 			// },
 			nav,
-			dailyPosts: await getPosts('posts/daily/'),
+			dailyPosts: await getPosts('posts/inbox/'),
 			posts: await getPosts(),
 			pageSize: 5,
 			postLength: await getPostLength(),

@@ -242,7 +242,7 @@ export const NAV_DATA: NavData[] = [
 			{
 				icon: 'https://developer.mozilla.org/apple-touch-icon.6803c6f0.png',
 				title: 'MDN | Web 开发者指南',
-				desc: 'Mozilla 的开发者平台，提供了大量关于 HTML、CSS 和 JavaScript 的详细文档以及广泛的 Web API 参考资',
+				desc: 'Mozilla 的开发者平台，提供了大量关于 HTML、CSS 和 JavaScript 的详细文档以及广泛的 Web API 参考资料',
 				link: 'https://developer.mozilla.org/zh-CN'
 			},
 			{
@@ -288,6 +288,17 @@ export const NAV_DATA: NavData[] = [
 				desc: '技术问答开发者社区',
 				link: 'https://segmentfault.com'
 			}
+		]
+	},
+    {
+		title: '个人博客',
+		children: [
+			{
+				title: '阮一峰的网络日志',
+				icon: 'https://www.ruanyifeng.com/favicon.ico',
+				desc: '阮一峰老师的文章，深入浅出、条理清晰，值得所有开发者学习！！',
+				link: 'https://www.ruanyifeng.com/blog/'
+			},
 		]
 	}
 	// {

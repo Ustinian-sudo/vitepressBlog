@@ -13,6 +13,20 @@
  */
 
 export const LOG_INFO = [
+    {
+		date: '2024/05/14',
+		version: '1.0.0-beta.4',
+		desc: [
+			{
+				type: 'Fixed',
+				content: ['· 修复 Guide 页面卡片内容显示不全问题']
+			},
+            {
+				type: 'Changed',
+				content: ['· 更改 Daily 页面名称为 Inbox 用于记录每日的碎片化信息']
+			}
+		]
+	},
 	{
 		date: '2024/03/15',
 		version: '1.0.0-beta.3',

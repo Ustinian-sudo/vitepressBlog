@@ -38,7 +38,7 @@ const svg = computed(() => {
                 </div>
                 <h5 v-if="props.title" :id="formatTitle" class="title">{{ props.title }}</h5>
             </div>
-            <p v-if="props.desc" class="desc">{{ props.desc }}</p>
+            <p v-if="props.desc" class="desc" :title="props.desc">{{ props.desc }}</p>
         </article>
     </a>
 </template>

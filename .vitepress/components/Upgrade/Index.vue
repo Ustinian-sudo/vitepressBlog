@@ -23,6 +23,9 @@ import { LOG_INFO } from './data';
 </template>
 
 <style lang="scss" scoped>
+.subtitle {
+    margin: 8px 0 0;
+}
 .version {
     margin: 10px 0;
     color: transparent;

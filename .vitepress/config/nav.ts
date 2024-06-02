@@ -6,12 +6,13 @@
 export const nav = [
 	{ text: '🏠Home', link: '/' },
 	{ text: '🧭Guide', link: '/pages/guide' },
+	{ text: '🍸Life', items: [{ text: 'Photo', link: '/pages/photo' }] },
 	{
 		text: '📖Index',
 		items: [
 			{ text: 'Archive', link: '/pages/archive' },
 			{ text: 'Sort', link: '/pages/sort' },
-            { text: 'Daily', link: '/pages/daily' },
+			{ text: 'Inbox', link: '/pages/inbox' }
 		]
 	},
 	{ text: '🔧Upgrade', link: '/pages/upgrade' },
