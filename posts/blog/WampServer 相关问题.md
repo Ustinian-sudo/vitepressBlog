@@ -17,7 +17,7 @@ tags:
 
 ### 权限设置
 
-1. 进入 httpd.conf 中,找到`<Directory/>`标签,修改成如下
+1. 进入 httpd.conf 中，找到`<Directory/>`标签，修改成如下
 
 ```ini
 <Directory />
@@ -28,13 +28,13 @@ tags:
 </Directory>
 ```
 
-2. 继续找到`<Directory "${INSTALL_DIR}/www/">`标签,修改
+2. 继续找到`<Directory "${INSTALL_DIR}/www/">`标签，修改
 
 ```ini
 Required local -> Require all granted
 ```
 
-3. 进入 httpd-vhosts.conf,同 2 一样修改
+3. 进入 httpd-vhosts.conf，同 2 一样修改
 
 > 注意：若依旧无法访问，需要查看本地的防火墙是否关闭，若不想关闭防火墙，可以添加入站规则，放开 apache 的端口，提供外网访问。
 
@@ -117,7 +117,7 @@ listen 9999 # wampserver 添加多监听一个 9999 端口
 
 修改步骤如下：
 
-1. 打开 phpMyadmin,选择 MySQL 服务器直接登录。
+1. 打开 phpMyadmin，选择 MySQL 服务器直接登录。
 2. 点击界面上的账户
 
 ![image-20230321163802852](http://qiniu.ustinian077.top/image-20230321163802852.png)

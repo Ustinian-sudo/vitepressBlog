@@ -67,7 +67,7 @@ tags:
 
 ![img](http://qiniu.ustinian077.top/1235697-20190218225425690-1353699465.png)
 
-打开控制台(win+r,输入 cmd，按回车)，输入 go env 查看 go 配置信息，
+打开控制台(win+r，输入 cmd，按回车)，输入 go env 查看 go 配置信息，
 
 ![img](http://qiniu.ustinian077.top/1235697-20190218230016332-1394149958.png)
 
