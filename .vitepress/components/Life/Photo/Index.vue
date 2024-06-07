@@ -55,6 +55,7 @@
 				position: relative;
 				overflow: hidden;
 				cursor: pointer;
+                box-shadow: 17px 17px 23px 0px rgba(0,0,0,0.2);
 			}
 			.photo-text {
 				text-align: center;
