@@ -13,7 +13,20 @@
  */
 
 export const LOG_INFO = [
-    {
+	{
+		date: '2024/07/10',
+		version: '1.0.0-beta.5',
+		desc: [
+			{
+				type: 'Refactored',
+				content: ['· 优化页面字体样式，原有字体粗细不明显，无法突出重点']
+			},
+            {
+                
+            }
+		]
+	},
+	{
 		date: '2024/05/14',
 		version: '1.0.0-beta.4',
 		desc: [
@@ -21,7 +34,7 @@ export const LOG_INFO = [
 				type: 'Fixed',
 				content: ['· 修复 Guide 页面卡片内容显示不全问题']
 			},
-            {
+			{
 				type: 'Changed',
 				content: ['· 更改 Daily 页面名称为 Inbox 用于记录每日的碎片化信息']
 			}
