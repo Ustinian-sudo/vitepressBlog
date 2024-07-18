@@ -6,7 +6,7 @@ import { useYearSort } from '../../utils/common'
 const { theme } = useData()
 const data = computed(() => useYearSort(theme.value.dailyPosts))
 
-// console.log(data.value)
+console.log(data.value)
 </script>
 
 <template>

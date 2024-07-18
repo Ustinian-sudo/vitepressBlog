@@ -28,7 +28,7 @@ const toggleTag = (tag: any) => {
                             {{ item.frontMatter.author }}
                         </span>
                         <span>
-                            <i class="iconfont icon-date"></i>
+                            <i class="iconfont icon-rili"></i>
                             {{ item.frontMatter.date }}
                         </span>
                     </div>
@@ -38,7 +38,7 @@ const toggleTag = (tag: any) => {
         <div class="sort-right">
             <div class="sort-wrapper card-box">
                 <div class="wrapper-header">
-                    <i class="iconfont icon-fenlei"></i>
+                    <i class="iconfont icon-2"></i>
                     全部分类
                 </div>
                 <div class="wrapper-list">
