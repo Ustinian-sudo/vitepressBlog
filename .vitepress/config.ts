@@ -13,14 +13,14 @@ async function config() {
 		description: 'Ustinian的个人博客', //mate标签description，多用于搜索引擎抓取摘要
 		head: [
 			['link', { rel: 'icon', type: 'image/svg+xml', href: '/avatar.png' }],
-			[
-				'link',
-				{
-					rel: 'stylesheet',
-					href: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css'
-				}
-			],
-			['script', { src: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js' }]
+			// [
+			// 	// 'link',
+			// 	// {
+			// 	// 	rel: 'stylesheet',
+			// 	// 	href: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css'
+			// 	// }
+			// ]
+			// ['script', { src: 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js' }]
 		],
 		themeConfig: {
 			logo: '/avatar.png',
