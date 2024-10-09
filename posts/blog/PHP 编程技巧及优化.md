@@ -74,3 +74,79 @@ $params = json_encode($data,JSON_UNESCAPED_UNICODE);
 http_request("http://example.com", "GET", $headers, $params);
 ```
 
+### 2. PHP 脚本先快速返回响应给客户端，后台再执行一些长时间的任务
+
+PHP 程序执行一般是单线程的，在处理一个需要较长时间完成的任务时，为了能够立即返回一个成功响应给客户端，而不会让客户端等待，就可以采用下面这两种方法：
+
+（1）通过设置请求头，告诉浏览器不要等待脚本执行完成，立即返回
+
+```php
+function keep_connection() {
+        @ob_end_clean();
+        @ob_start();
+        echo json_encode(array('code' => 0));
+        echo str_repeat(" ", 4096);
+        $size = ob_get_length();
+        @header("Content-Length: $size");
+        @header('Connection: close'); // 通知客户端服务器将关闭连接
+        @header("HTTP/1.1 200 OK");
+        @header("Content-Type: text/html;charset=utf-8");
+        @ob_end_flush();
+        if (@ob_get_length())
+            @ob_flush(); // 刷新缓冲区，将其发送到客户端。
+        @flush();
+        ignore_user_abort(true); // 客户端断开连接，PHP 脚本也将继续执行
+        session_write_close();
+        set_time_limit(604800);
+        ini_set('memory_limit', -1); // 取消内存限制，允许脚本使用尽可能多的内存。
+}
+```
+
+（2）通过 curl 设置较短的超时时间，让脚本在超时后自动退出
+
+```php
+public function quick_response()
+{
+    // 立即返回成功响应
+    $response = [
+        'status' => 'success',
+        'message' => 'Task has been received and will be processed shortly.'
+    ];
+    echo json_encode($response);
+    $url = "http://example.com/task.php";
+    // 后台执行延迟任务
+    $this->http_request($url);
+}
+
+public function http_request($url)
+{
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_TIMEOUT_MS, 600);  // 600ms后超时返回
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $response = curl_exec($ch);
+
+    // 任务处理逻辑
+    $this->my_task();
+
+    // 关闭cURL资源
+    curl_close($ch);
+}
+```
+
+### 3. 字符串和数字之间的比较规则
+
+PHP 中，字符串和数字之间的比较有点诡异，规则如下：
+
+- 数字开头的字符串：如果字符串以数字开头，那么字符串开头的数字部分会被转换成整数值，直到遇到非数字字符。
+- 非数字字符串：如果字符串不以数字开头，那么它会被转换为整数值 0。
+
+> 为了避免这种隐式类型转换带来的问题，建议在进行比较时，使用严格比较运算符（===），或者直接比较字符串 '0'
+
+```php
+var_dump('123abc' == 123);     // true
+var_dump('abc123' == 0);       // true
+var_dump('abc' == 0);          // true
+var_dump('abc' === 0);         // false
+var_dump('abc' == '0');        // false
+```
