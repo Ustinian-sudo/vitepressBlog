@@ -1,6 +1,8 @@
 @font-face {
-  font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1679559210433') format('truetype');
+  font-family: "iconfont"; /* Project id 4600203 */
+  src: url('iconfont.woff2?t=1726197816731') format('woff2'),
+       url('iconfont.woff?t=1726197816731') format('woff'),
+       url('iconfont.ttf?t=1726197816731') format('truetype');
 }
 
 .iconfont {
@@ -11,15 +13,51 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-exif:before {
+  content: "\e8af";
+}
+
+.icon-tupian:before {
+  content: "\e8ba";
+}
+
+.icon-banquan:before {
+  content: "\e620";
+}
+
+.icon-zuojiantou1:before {
+  content: "\e60e";
+}
+
+.icon-youjiantou1:before {
+  content: "\e60f";
+}
+
+.icon-canshu:before {
+  content: "\e608";
+}
+
+.icon-tuwenzixun:before {
+  content: "\e683";
+}
+
+.icon-zuojiantou:before {
+  content: "\e626";
+}
+
+.icon-youjiantou:before {
+  content: "\e627";
+}
+
 .icon-user:before {
   content: "\e7ae";
 }
 
-.icon-fenlei:before {
-  content: "\e603";
+.icon-rili:before {
+  content: "\e602";
 }
 
-.icon-date:before {
-  content: "\eb9b";
+.icon-2:before {
+  content: "\e623";
 }
 
